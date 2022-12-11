@@ -418,7 +418,7 @@ const createElemWithText = (name = "p", text = "", className)=>{
   const displayPosts = async(posts)=>{
     const main = document.querySelector("main");
     let element;
-    posts === null ? element = createElemWithText("p", "Select an Employee to display their posts.", "default-text") : element = await createPosts(posts)
+    posts == null ? element = createElemWithText("p", "Select an Employee to display their posts.", "default-text") : element = await createPosts(posts)
     main.append(element);
     return element;
   };
